@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="three.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<style>
+h1 {
+	text-align: center;
+}
+
+.screen {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+
+.overlay {
+	z-index: 1;
+}
+
+.blur {
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+#app {
+	background-color: #333;
+}
+
+#game-screen {
+	background-color: #000;
+}
+
+#menu-screen {
+	opacity: 0.5;
+}
+
+#menu {
+	display: block;
+	width: 50%;
+	height: 90%;
+	background-color: #aaa;
+	margin: auto;
+}
+</style>
+</head>
+<body>
+	<div id="app" class="screen">
+		<div id="game-screen" class="screen"></div>
+		<div id="menu-screen" class="screen overlay">
+			<div id="menu">
+				<h1>Gadoo</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
